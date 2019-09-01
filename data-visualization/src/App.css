@@ -26,5 +26,36 @@ h1 {
   padding-bottom: 3em;
 }
 .container .row div {
-  outline: solid 1px black;
+  /*outline: solid 1px black;*/
+}
+
+.teammate:after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.teammate h2 {
+  font-size: 1.em;
+  font-weight: normal;
+  padding-top: 12px;
+  padding-left: 17px;
+  margin: 0;
+}
+.teammate p {
+  margin: 0;
+  padding-left: 17px;
+  font-size: .7em;
+}
+
+.mate-info {
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+.panelbar-wrapper {
+  max-width: 300px;
+  margin: 0 auto;
 }

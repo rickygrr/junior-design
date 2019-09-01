@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@progress/kendo-data-query": "^1.5.2",
     "@progress/kendo-drawing": "^1.5.12",
     "@progress/kendo-react-buttons": "^3.3.0",
+    "@progress/kendo-react-charts": "^3.3.0",
+    "@progress/kendo-react-dateinputs": "^3.3.0",
     "@progress/kendo-react-dialogs": "^3.3.0",
+    "@progress/kendo-react-dropdowns": "^3.3.0",
+    "@progress/kendo-react-grid": "^3.3.0",
     "@progress/kendo-react-inputs": "^3.3.0",
     "@progress/kendo-react-intl": "^3.3.0",
     "@progress/kendo-react-layout": "^3.3.0",
@@ -13,6 +18,7 @@
     "@progress/kendo-react-ripple": "^3.3.0",
     "@progress/kendo-theme-material": "^3.1.0",
     "bootstrap-4-grid": "^3.1.0",
+    "hammerjs": "^2.0.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
