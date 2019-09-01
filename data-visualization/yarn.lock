@@ -1053,6 +1053,30 @@
     "@telerik/kendo-draggable" "1.9.2"
     prop-types "^15.6.0"
 
+"@progress/kendo-react-dialogs@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dialogs/-/kendo-react-dialogs-3.3.0.tgz#24cf14fb3427f7cf6b821ec9c1b0ec705700105f"
+  integrity sha512-6SQBHQ2CUeoBdqckQTwwjGCYx4mWE6ZXLgtCVxxtWyd7qACVm7rxjseZwQpr1sriavU+iWHnduhw8Vt/3C4NhQ==
+  dependencies:
+    "@progress/kendo-react-common" "3.3.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-inputs@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-inputs/-/kendo-react-inputs-3.3.0.tgz#63c6b6fbc62f78986dbac1fb1b6f4bd939aca9a3"
+  integrity sha512-CqeVtc3ygqZ4TQeKX1F2GoH/t7bp4dAdaC3QqdfwBZ219ccwTblL8OXOAtvShE/zplz6841z9hah0LAV2o6itA==
+  dependencies:
+    "@progress/kendo-react-common" "3.3.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-intl@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-3.3.0.tgz#141fb5fce5ce4c7414266e8a7213e1e488124998"
+  integrity sha512-5UBmQES39zUyLZcjbIEFs5xZqXsYf5tstcNEdmI5mn0m7DDSN/lNLINVPXQqTJg4smhD1PmQJScwKagi3//Fdw==
+  dependencies:
+    "@telerik/kendo-intl" "^1.4.4"
+    prop-types "^15.6.0"
+
 "@progress/kendo-react-layout@^3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-layout/-/kendo-react-layout-3.3.0.tgz#7cc03156f60814bc592843df97c647bb4ec664fd"
@@ -1207,6 +1231,11 @@
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-1.9.2.tgz#191cb2fa1051d1c727d570d24e732872d64541ae"
   integrity sha512-6TqfyPMFibX2kAcLyXYcsZAFmJFRxpQtizoL6YZNdFb4/YRkgijbwXsVJs7nMecTzrmroc0fieixt2XdJXgicA==
+
+"@telerik/kendo-intl@^1.4.4":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-intl/-/kendo-intl-1.5.2.tgz#2f2540b0c243c08d95895a8fc925315449f198fc"
+  integrity sha512-T5Ie2QYtbBCYS88hI3ulKhXykH0ds1FWbgaITt6dn9pmjyEbkF66a8iCbtBhI9pAwH0GLqfOoYXRcbBEUth0Sg==
 
 "@types/babel__core@^7.1.0":
   version "7.1.2"
