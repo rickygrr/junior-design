@@ -17,7 +17,7 @@ const labelTemplate = (e) => (e.category + '\n'  + (e.percentage*100) +'%');
 export const DonutChartContainer = () => (
   <Chart style={{height:300}}>
     <ChartSeries>
-      <ChartSeriesItem type="donut" data={donutChartData} categoryField="foodType" field="percentSold" padding={0}>
+      <ChartSeriesItem type="donut" data={donutChartData} categoryField="revisits" field="revisitsPerAOI" padding={0}>
         <ChartSeriesLabels color="#fff" background="none" content={labelTemplate} />
       </ChartSeriesItem>
     </ChartSeries>

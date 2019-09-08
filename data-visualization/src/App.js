@@ -42,6 +42,7 @@ class App extends Component {
             <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
               <h1>Data Visualization Dashboard</h1>
             </div>
+
             <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 buttons-right">
               <Button primary={true} onClick={this.handleShare}>Share</Button>
               <Button onClick={this.handlePDFExport}>Export to PDF</Button>
@@ -53,20 +54,19 @@ class App extends Component {
             </div>
             <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
               <div className="row">
-                <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div className="col-xs-8 col-sm-8 col-md-6 col-lg-6 col-xl-6">
+                  <h3>Revisits</h3>
                   <DonutChartContainer />
                 </div>
-
-                <div className="col-xs-6 col-sm-6 col-md-2 col-lg-2 col-xl-2">
-                </div>
-
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <h3>Hit Count/ Hit Ratio/ Fixation Count</h3>
                   <BarChartContainer />
                 </div>
 
               </div>
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <h3>Statistics</h3>
                   <GridContainer />
                 </div>
               </div>

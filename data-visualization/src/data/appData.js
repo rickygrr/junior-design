@@ -1,202 +1,77 @@
 export const donutChartData = [
-  { 'foodType': 'Beverages', 'percentSold': 16.5 },
-  { 'foodType': 'Condiments', 'percentSold': 24 },
-  { 'foodType': 'Produce', 'percentSold': 13 },
-  { 'foodType': 'Meat/Poultry', 'percentSold': 16.5 },
-  { 'foodType': 'Seafood', 'percentSold': 20 },
-  { 'foodType': 'Other', 'percentSold': 10 }
+  { 'revisits': 'Top', 'revisitsPerAOI': 29.5 },
+  { 'revisits': 'Right', 'revisitsPerAOI': 24 },
+  { 'revisits': 'Bottom', 'revisitsPerAOI': 30 },
+  { 'revisits': 'Left', 'revisitsPerAOI': 16.5 },
 ];
 
-export const barChartQ4Months =['October', 'November', 'December'];
+export const barChartAOI =['Top', 'Right', 'Bottom', 'Left'];
 export const barChartMonthlyPercentages = [
-  { name: 'Beverages', data: [14, 16, 19.5] },
-  { name: 'Condiments', data: [24, 23.5, 24.5] },
-  { name: 'Produce', data: [12.5, 12.5, 14] },
-  { name: 'Meat/Poultry', data: [16, 18, 17] },
-  { name: 'Seafood', data: [21.5, 20, 17] },
-  { name: 'Other', data: [7, 12, 11] },
+  { name: 'Hit Count', data: [8, 12, 13, 9] },
+  { name: 'Hit Ratio', data: [4.6132, 2.2384, 3.5725, 5.8452] },
+  { name: 'Fixation Count', data: [10, 14, 12, 16] }
 ];
 
 export const gridData = [
   {
       "ProductID": 1,
-      "ProductName": "Chai",
-      "SupplierID": 1,
+      "ProductName": "Top",
       "CategoryID": 1,
       "QuantityPerUnit": "10 boxes x 20 bags",
-      "UnitPrice": 18,
-      "UnitsInStock": 39,
-      "UnitsOnOrder": 0,
-      "ReorderLevel": 10,
-      "Discontinued": false,
+      "UnitPrice": 1.5158,
+      "UnitsInStock": 0.0028,
+      "UnitsOnOrder": 1.3543,
       "Category": {
           "CategoryID": 1,
-          "CategoryName": "Beverages",
+          "CategoryName": "0.5324",
           "Description": "Soft drinks, coffees, teas, beers, and ales"
       },
       "FirstOrderedOn": new Date(1996, 8, 20)
   },
   {
       "ProductID": 2,
-      "ProductName": "Chang",
-      "SupplierID": 1,
+      "ProductName": "Right",
       "CategoryID": 1,
       "QuantityPerUnit": "24 - 12 oz bottles",
-      "UnitPrice": 19,
-      "UnitsInStock": 17,
-      "UnitsOnOrder": 40,
-      "ReorderLevel": 25,
-      "Discontinued": false,
+      "UnitPrice": 2.4251,
+      "UnitsInStock": 0.0057,
+      "UnitsOnOrder": 2.3654,
       "Category": {
           "CategoryID": 1,
-          "CategoryName": "Beverages",
+          "CategoryName": "1.7532",
           "Description": "Soft drinks, coffees, teas, beers, and ales"
       },
       "FirstOrderedOn": new Date(1996, 7, 12)
   },
   {
       "ProductID": 3,
-      "ProductName": "Aniseed Syrup",
-      "SupplierID": 1,
+      "ProductName": "Bottom",
       "CategoryID": 2,
       "QuantityPerUnit": "12 - 550 ml bottles",
-      "UnitPrice": 10,
-      "UnitsInStock": 13,
-      "UnitsOnOrder": 70,
-      "ReorderLevel": 25,
-      "Discontinued": false,
+      "UnitPrice": 1.8662,
+      "UnitsInStock": 0.0073,
+      "UnitsOnOrder": 2.2143,
       "Category": {
           "CategoryID": 2,
-          "CategoryName": "Condiments",
+          "CategoryName": "0.9134",
           "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
       },
       "FirstOrderedOn": new Date(1996, 8, 26)
   },
   {
       "ProductID": 4,
-      "ProductName": "Chef Anton's Cajun Seasoning",
-      "SupplierID": 2,
+      "ProductName": "Left",
       "CategoryID": 2,
       "QuantityPerUnit": "48 - 6 oz jars",
-      "UnitPrice": 22,
-      "UnitsInStock": 53,
-      "UnitsOnOrder": 0,
-      "ReorderLevel": 0,
-      "Discontinued": true,
+      "UnitPrice": 0.9313,
+      "UnitsInStock": 1.0056,
+      "UnitsOnOrder": 1.5972,
       "Category": {
           "CategoryID": 2,
-          "CategoryName": "Condiments",
+          "CategoryName": "3.4896",
           "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
       },
       "FirstOrderedOn": new Date(1996, 9, 19)
-  },
-  {
-      "ProductID": 5,
-      "ProductName": "Chef Anton's Gumbo Mix",
-      "SupplierID": 2,
-      "CategoryID": 2,
-      "QuantityPerUnit": "36 boxes",
-      "UnitPrice": 21.35,
-      "UnitsInStock": 0,
-      "UnitsOnOrder": 0,
-      "ReorderLevel": 0,
-      "Discontinued": true,
-      "Category": {
-          "CategoryID": 2,
-          "CategoryName": "Condiments",
-          "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-      },
-      "FirstOrderedOn": new Date(1996, 7, 17)
-  },
-  {
-      "ProductID": 6,
-      "ProductName": "Grandma's Boysenberry Spread",
-      "SupplierID": 3,
-      "CategoryID": 2,
-      "QuantityPerUnit": "12 - 8 oz jars",
-      "UnitPrice": 25,
-      "UnitsInStock": 120,
-      "UnitsOnOrder": 0,
-      "ReorderLevel": 25,
-      "Discontinued": false,
-      "Category": {
-          "CategoryID": 2,
-          "CategoryName": "Condiments",
-          "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-      },
-      "FirstOrderedOn": new Date(1996, 9, 19)
-  },
-  {
-      "ProductID": 7,
-      "ProductName": "Uncle Bob's Organic Dried Pears",
-      "SupplierID": 3,
-      "CategoryID": 7,
-      "QuantityPerUnit": "12 - 1 lb pkgs.",
-      "UnitPrice": 30,
-      "UnitsInStock": 15,
-      "UnitsOnOrder": 0,
-      "ReorderLevel": 10,
-      "Discontinued": false,
-      "Category": {
-          "CategoryID": 7,
-          "CategoryName": "Produce",
-          "Description": "Dried fruit and bean curd"
-      },
-      "FirstOrderedOn": new Date(1996, 7, 22)
-  },
-  {
-      "ProductID": 8,
-      "ProductName": "Northwoods Cranberry Sauce",
-      "SupplierID": 3,
-      "CategoryID": 2,
-      "QuantityPerUnit": "12 - 12 oz jars",
-      "UnitPrice": 40,
-      "UnitsInStock": 6,
-      "UnitsOnOrder": 0,
-      "ReorderLevel": 0,
-      "Discontinued": false,
-      "Category": {
-          "CategoryID": 2,
-          "CategoryName": "Condiments",
-          "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-      },
-      "FirstOrderedOn": new Date(1996, 11, 1)
-  },
-  {
-      "ProductID": 9,
-      "ProductName": "Mishi Kobe Niku",
-      "SupplierID": 4,
-      "CategoryID": 6,
-      "QuantityPerUnit": "18 - 500 g pkgs.",
-      "UnitPrice": 97,
-      "UnitsInStock": 29,
-      "UnitsOnOrder": 0,
-      "ReorderLevel": 0,
-      "Discontinued": true,
-      "Category": {
-          "CategoryID": 6,
-          "CategoryName": "Meat/Poultry",
-          "Description": "Prepared meats"
-      },
-      "FirstOrderedOn": new Date(1997, 1, 21)
-  },
-  {
-      "ProductID": 10,
-      "ProductName": "Ikura",
-      "SupplierID": 4,
-      "CategoryID": 8,
-      "QuantityPerUnit": "12 - 200 ml jars",
-      "UnitPrice": 31,
-      "UnitsInStock": 31,
-      "UnitsOnOrder": 0,
-      "ReorderLevel": 0,
-      "Discontinued": false,
-      "Category": {
-          "CategoryID": 8,
-          "CategoryName": "Seafood",
-          "Description": "Seaweed and fish"
-      },
-      "FirstOrderedOn": new Date(1996, 8, 5)
   }
 ];
 
@@ -217,17 +92,6 @@ export const panelBarData = {
     {
       aoi: 'Bottom',
       sequence: '4'
-    }
-  ],
-  'salesReports': [
-    {
-      title: 'Q1 Report',
-    }, {
-      title: 'Q2 Report',
-    }, {
-      title: 'Q3 Report',
-    }, {
-      title: 'Q4 Report',
     }
   ]
 }
