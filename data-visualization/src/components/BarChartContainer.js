@@ -12,17 +12,17 @@ import {
   ChartValueAxisItem
 } from '@progress/kendo-react-charts';
 
-import { barChartAOI, barChartMonthlyPercentages } from '../data/appData';
+import { barChartAxis, barChartData } from '../data/appData';
 
 export const BarChartContainer = () => (
   <Chart style={{ height: 288 }}>
     <ChartLegend visible={false} />
     <ChartCategoryAxis>
-      <ChartCategoryAxisItem categories={barChartAOI} startAngle={45} />
+      <ChartCategoryAxisItem categories={barChartAxis} startAngle={45} />
     </ChartCategoryAxis>
     <ChartSeries>
       {
-        barChartMonthlyPercentages.map((item, idx) => (
+        barChartData.map((item, idx) => (
           <ChartSeriesItem key={idx} type="column" data={item.data} name={item.name} gap={2}/>
         ))}
     </ChartSeries>

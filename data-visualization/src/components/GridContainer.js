@@ -15,12 +15,12 @@ const processData = (data) => {
 export const GridContainer = () => (
   <div>
     <Grid style={{ height: '300px' }} data={processData(gridData)}>
-      <Column field="ProductID" title="ID" width="40px" />
-      <Column field="ProductName" title="Name" width="160px" />
-      <Column field="Category.CategoryName" title="Entry Time" width="160px" />
-      <Column field="UnitPrice" title="Dwell Time" width="160px" />
-      <Column field="UnitsInStock" title="First Fixation" width="160px" />
-      <Column field="UnitsOnOrder" title="Average Fixation" width="160px" />
+      <Column field="ID" title="ID" width="40px" />
+      <Column field="Name" title="Name" width="160px" />
+      <Column field="EntryTime" title="Entry Time" width="160px" />
+      <Column field="DwellTime" title="Dwell Time" width="160px" />
+      <Column field="FirstFixation" title="First Fixation" width="160px" />
+      <Column field="AverageFixation" title="Average Fixation" width="160px" />
     </Grid>
   </div>
 );
