@@ -1,6 +1,22 @@
 # Team 9105 - Customer Delivery Documents 
 
+The junior-design github repository consists of two deliverables: the data visualization dashboard and the object detection plugin. The data visualization dashboard is a React Native application, while the object detection plugin is a python script. Following, are the release notes and install guides for both of these deliverables. Throughout the first sprint of the project, we started developing the data visualization dashboard. However, we decided to focus on the object detection plugin in the later sprints, as it is the main deliverable for the project. 
+
+
 ## Data Visualization Dashboard
+
+### Release Notes
+
+#### New Software Features
+The data visualization dashboard consists of four main components - the area of interest side menu, the pie chart data layout, the bar graph data layout, and the grid data layout. In addition, there is an 'export' feature, which enables the user to download the current view of the data visualization dashboard as a pdf. 
+
+#### Bug Fixes
+N/A
+
+#### Areas of Development 
+There are two functionalities that are missing - 
+1. The 'import data' feature, which enables the user to import a csv data file and display it in the data visualization dashboard.
+2. The 'share' feature, which sends an email with the current view of the dashboard as a pdf, is currently not connected to an email service. As a result, this feature is not working properly. 
 
 ### Install Guide
 
@@ -42,16 +58,18 @@ $ yarn add @progress/kendo-react-layout
 ```
 
 #### Download & Run Instructions
-1. Download the zip file for the junior-design github repository
+1. Download the zip file for the junior-design github repository in the 'Clone or download' tab
 2. Change to the junior-design/data-visualization directory
 ```
 $ cd junior-design/data-visualization
 ```
-3. Run the data-visualization on localhost.
+3. Run the data-visualization on localhost
 ```
 $ yarn start
 ```
 
+---
+## Objection Detection Plugin
 
-#### 
+
 
