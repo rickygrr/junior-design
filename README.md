@@ -64,7 +64,7 @@ $ yarn add @progress/kendo-react-layout
 ```
 $ cd junior-design/data-visualization
 ```
-3. Run the data-visualization on localhost
+3. Run the React data-visualization application on localhost
 ```
 $ yarn start
 ```
