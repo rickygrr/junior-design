@@ -1,6 +1,7 @@
 # Team 9105 - Customer Delivery Documents 
 
-The junior-design github repository consists of two deliverables: the data visualization dashboard and the object detection plugin. The data visualization dashboard is a React Native application, while the object detection plugin is a python script. Following, are the release notes and install guides for both of these deliverables. Throughout the first sprint of the project, we started developing the data visualization dashboard. However, we decided to focus on the object detection plugin in the later sprints, as it is the main deliverable for the project. 
+The junior-design github repository consists of two deliverables: the data visualization dashboard and the object detection plugin. The data visualization dashboard is a React Native application, while the object detection plugin is a python script. 
+Throughout the first sprint of the project, we started developing the data visualization dashboard. However, we decided to focus on the object detection plugin in the later sprints, as it is the main deliverable for the project. Following, are the release notes and install guides for both of these deliverables.
 
 
 ## Data Visualization Dashboard
