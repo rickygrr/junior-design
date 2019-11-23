@@ -73,6 +73,20 @@ $ yarn start
 ## Objection Detection Plugin
 The object detection plugin takes in videos and pupil data from a Pupil Capture recording, and allows the user to select and track a region of interest in the video clip. t also uses the pupil data to calculate how often the user looked at the region of interest. 
 
+#### Pre-Requisites
+OpenCV and Pandas should be installed on the system for this plugin to work. The follwing are commands to install these through PyPI.
+
+OpenCV:
+```
+$ pip install opencv-python
+$ pip install opencv-contrib-python
+```
+
+Pandas:
+```
+$ pip install pandas
+```
+
 #### Usage
 When run, the script will display the video clip on the screen. The user can then press ```A``` on the keyboard, which will pause the video and allow the user to draw a square on the screen to select the region to track. After selecting the region, pressing ```Enter``` will resume the video, and display the tracked region. 
 
