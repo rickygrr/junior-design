@@ -71,6 +71,15 @@ $ yarn start
 
 ---
 ## Objection Detection Plugin
+The object detection plugin takes in videos and pupil data from a Pupil Capture recording, and allows the user to select and track a region of interest in the video clip. t also uses the pupil data to calculate how often the user looked at the region of interest. 
+
+#### Usage
+When run, the script will display the video clip on the screen. The user can then press ```A``` on the keyboard, which will pause the video and allow the user to draw a square on the screen to select the region to track. After selecting the region, pressing ```Enter``` will resume the video, and display the tracked region. 
+
+To run this plugin, run the following in a directory that contains both ```object_detection_plugin.py``` and the video clip. The video clip should be named ```world.mp4```.
+```
+$ python object_detection_plugin.py
+```
 
 
 
