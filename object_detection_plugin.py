@@ -1,4 +1,6 @@
 import cv2
+import csv
+import os.path
 import sys
 import pandas as pd
 
@@ -64,6 +66,8 @@ if __name__ == '__main__' :
     bbox = (287, 23, 86, 320)
 
     counter = 0
+    numOfVisits = 0
+    revisited = False
 
     # Draw box or centroid or both
     draw_box = True
@@ -86,7 +90,7 @@ if __name__ == '__main__' :
 
     tracker_started = False
 
-    while True:
+    while i < (len(pos_x) and len(pos_y)):
         # Read a new frame
         ok, frame = video.read()
         if not ok:
@@ -108,6 +112,7 @@ if __name__ == '__main__' :
         else:
             # Start timer
             timer = cv2.getTickCount()
+
 
             # Calculate Frames per second (FPS)
             fps = cv2.getTickFrequency() / (cv2.getTickCount() - timer);
@@ -131,6 +136,11 @@ if __name__ == '__main__' :
                         # Check collision
                         if collision(bbox, gaze_center):
                             counter += 1
+                            if not revisited:
+                                numOfVisits += 1
+                                revisited = True
+                        else:
+                            revisited = False
                         cv2.putText(frame, "Seen for {} frames".format(counter), (100,80), cv2.FONT_HERSHEY_SIMPLEX, 0.75,(0,255,0),2)
 
                     if draw_centroid:
@@ -161,3 +171,16 @@ if __name__ == '__main__' :
         k = cv2.waitKey(1) & 0xff
         if k == 27 :
             break
+
+
+
+    if os.path.isfile('test.csv'):
+        with open('test.csv', 'a', newline = '') as csvfile:
+            filewriter = csv.writer(csvfile, delimiter = ',', quotechar = '|', quoting = csv.QUOTE_MINIMAL)
+            filewriter.writerow([counter,counter/len(pos_x), numOfVisits])
+
+    else:
+        with open('test.csv', 'w', newline = '') as csvfile:
+            filewriter = csv.writer(csvfile, delimiter = ',', quotechar = '|', quoting = csv.QUOTE_MINIMAL)
+            filewriter.writerow(['gazeLength','hitCheck','numOfVisits'])
+            filewriter.writerow([counter,counter/len(pos_x), numOfVisits])
