@@ -35,10 +35,10 @@ def create_tracker(minor_ver):
 
 def collision(box, point):
     """Determine if point collides with box"""
-    p_x, p_y = point
+    point_x, point_y = point
     # (box_x, box_y): top left corrdinates of box
     box_x, box_y, box_w, box_h = box
-    return p_x > box_x and p_x < box_x + box_w and p_y > box_y and p_y < box_y + box_h
+    return point_x > box_x and point_x < box_x + box_w and point_y > box_y and point_y < box_y + box_h
 
 
 if __name__ == '__main__' :
@@ -53,20 +53,20 @@ if __name__ == '__main__' :
 
     # Exit if video not opened.
     if not video.isOpened():
-        print ("Could not open video")
+        print ("Could not open video.")
         sys.exit()
 
     # Read first frame.
     ok, frame = video.read()
     if not ok:
-        print ('Cannot read video file')
+        print ("Cannot read video file.")
         sys.exit()
 
     # Define an initial bounding box
     bbox = (287, 23, 86, 320)
 
     counter = 0
-    numOfVisits = 0
+    numberOfVisits = 0
     revisited = False
 
     # Draw box or centroid or both
@@ -137,7 +137,7 @@ if __name__ == '__main__' :
                         if collision(bbox, gaze_center):
                             counter += 1
                             if not revisited:
-                                numOfVisits += 1
+                                numberOfVisits += 1
                                 revisited = True
                         else:
                             revisited = False
@@ -177,10 +177,10 @@ if __name__ == '__main__' :
     if os.path.isfile('test.csv'):
         with open('test.csv', 'a', newline = '') as csvfile:
             filewriter = csv.writer(csvfile, delimiter = ',', quotechar = '|', quoting = csv.QUOTE_MINIMAL)
-            filewriter.writerow([counter,counter/len(pos_x), numOfVisits])
+            filewriter.writerow([counter,counter/len(pos_x), numberOfVisits])
 
     else:
         with open('test.csv', 'w', newline = '') as csvfile:
             filewriter = csv.writer(csvfile, delimiter = ',', quotechar = '|', quoting = csv.QUOTE_MINIMAL)
-            filewriter.writerow(['gazeLength','hitCheck','numOfVisits'])
-            filewriter.writerow([counter,counter/len(pos_x), numOfVisits])
+            filewriter.writerow(['gazeLength','hitCheck','numberOfVisits'])
+            filewriter.writerow([counter,counter/len(pos_x), numberOfVisits])
