@@ -88,9 +88,9 @@ $ pip install pandas
 ```
 
 #### Usage
-When run, the script will display the video clip on the screen. The user can then press ```A``` on the keyboard, which will pause the video and allow the user to draw a square on the screen to select the region to track. After selecting the region, pressing ```Enter``` will resume the video, and display the tracked region. 
+When run, the script will display the video clip on the screen. The user can then press ```A``` on the keyboard, which will pause the video and allow the user to draw a square on the screen to select the region to track. After selecting the region, pressing ```Enter``` will resume the video, and display the tracked region. After running the plugin, it will create or append to a csv called test.csv with some data. Be careful not to mix different videos into this csv.
 
-To run this plugin, run the following in a directory that contains both ```object_detection_plugin.py``` and the video clip. The video clip should be named ```world.mp4```.
+To run this plugin, you'll need to record a video in Pupil Capture of Pupil Labs first. You will also need the gaze data associated with the video. Export the data from Pupil Labs by going into Pupil Player, opening the recording, and pressing 'e'. Then, move the ```world.mp4 ``` and ```gaze_positions.csv``` into a directory that contains ```object_detection_plugin.py```. Note: you may need to change the name of the video and csv to ```world2.mp4``` and ```gaze_positions.csv``` respectively. This can be fixed later by changing the names the plugin plugin is looking for. Then run the following line in command prompt once you've changed directory (cd) to where all these files are.
 ```
 $ python object_detection_plugin.py
 ```
