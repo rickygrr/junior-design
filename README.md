@@ -17,7 +17,7 @@ N/A
 #### Areas of Development 
 There are two functionalities that are missing - 
 1. The 'import data' feature, which enables the user to import a csv data file and display it in the data visualization dashboard.
-2. The 'share' feature, which sends an email with the current view of the dashboard as a pdf, is currently not connected to an email service. As a result, this feature is not working properly. 
+2. The 'share' feature, which sends an email with the current view of the dashboard as a pdf, is currently not connected to an email service. As a result, this feature is not working properly.
 
 ### Install Guide
 
@@ -71,7 +71,15 @@ $ yarn start
 
 ---
 ## Objection Detection Plugin
-The object detection plugin takes in videos and pupil data from a Pupil Capture recording, and allows the user to select and track a region of interest in the video clip. t also uses the pupil data to calculate how often the user looked at the region of interest. 
+The object detection plugin takes in videos and pupil data from a Pupil Capture recording, and allows the user to select and track a region of interest in the video clip. It also uses the pupil data to calculate how often the user looked at the region of interest.
+
+#### Areas of Development
+
+For the object detection plugin, there are 4 features that could be developed.
+1. Adding a way to run the program with multiple videos without having to change directories. Possibly make the program look at "videos" folder.
+2. Track more than one area at a time.
+3. Add more metrics about eye tracking.
+4. Integrate the outputted csv into the dashboard. Right now, they're separate systems.
 
 #### Pre-Requisites
 OpenCV and Pandas should be installed on the system for this plugin to work. The follwing are commands to install these through PyPI.
